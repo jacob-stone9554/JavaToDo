@@ -119,6 +119,11 @@ public class Task {
      * Format and print the details of the task
      */
     public void printDetails() {
-
+        if(isCompleted) {
+            System.out.println("Task: " + title + "\nDescription: " +  descr + "\nCategory: " + category + "\nDue Date: " + dueDate + "\nCompletion Status: Completed");
+        }
+        else {
+            System.out.println("Task: " + title + "\nDescription: " +  descr + "\nCategory: " + category + "\nDue Date: " + dueDate + "\nCompletion Status: Not Yet Completed\n");
+        }
     }
 }
